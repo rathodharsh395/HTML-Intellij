@@ -13,5 +13,6 @@ set1.forEach(function(element) {
 });
 
 console.log(commonElements); // ['1','2','3']
+document.write("the common elements are");
 document.write(commonElements)
 
