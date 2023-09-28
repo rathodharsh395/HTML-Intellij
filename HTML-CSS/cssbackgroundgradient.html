@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Gradient Background</title>
+    <style>
+        body{
+            font-family:arial;
+        }
+        #box{
+            width:800px;
+            height:300px;
+            padding:20px;
+            border:3px solid black;
+            background:linear-gradient(-45deg,red,white,green,indigo);
+        }
+        #box2{
+            width:800px;
+            height:300px;
+            padding:20px;
+            border:3px solid black;
+            background:repeating-linear-gradient(to right,red,yellow 10%,green 20%);
+        }
+        #box3{
+            width:800px;
+            height:300px;
+            padding:20px;
+            border:3px solid black;
+            background:repeating-radial-gradient(circle,red,yellow 50px,green 100px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Yahoo Baba : CSS Gradient Background</h1>
+    <div id="box">
+        <p>linear-gradient</p>
+    </div>
+    <div id="box2">
+        <p>repeating-linear-gradient</p>
+    </div>
+    <div id="box3">
+        <p>radial-gradient</p>
+    </div>
+</body>
+</html>

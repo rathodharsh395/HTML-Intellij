@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Table Properties</title>
+    <style>
+        body{
+            background:red;
+            font-family:arial,helvetica;
+        }
+        table{
+            width:300px;
+            table-layout:auto;
+            border-collapse:collapse;
+        }
+        table, td, th{
+            border:2px solid #ddd;
+        }
+        td, th{
+            padding:5px 20px;
+            vertical-align:middle;
+        }
+        caption{
+            caption-side:top;
+        }
+        tr:hover{
+            background:skyblue;
+        }
+        tr:nth-child(even){
+            background:#f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yahoo Baba : CSS Table Properties</h1>
+    <table>
+        <caption>Employee Record</caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Mohannnnnnnnnnnn ramakrishna chiina svamin muttu swami venu gopal ayyar </td>
+            <td>Kumarrrrrrrrrrrrrr</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Salim</td>
+            <td>Khan</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Inder</td>
+            <td>Singh</td>
+            <td>#30</td>
+        </tr>
+    </table>
+</body>
+</html>

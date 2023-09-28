@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yahoo Baba : CSS Grid Order </title>
+    <style>
+        body{ font-family:arial,helvetica; }
+        h1{ padding:0 0 0 40px; }
+        .container{
+            background:lightgrey;
+            width:650px;
+            margin:50px auto 0;
+
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+            grid-template-rows: repeat(2,150px);
+
+            grid-auto-rows:80px;
+            }
+        .item1{ background:orangered;order:2;}
+        .item2{ background:yellowgreen;order:4; }
+        .item3{ background:MEDIUMPURPLE;order:1; }
+        .item4{ background:hotpink;order:5; }
+        .item5{ background:royalblue; order:3}
+        .item6{ background:gold;order:6; }
+        .items{ font-size:20px;color:white;}
+
+    </style>
+</head>
+<body>
+<h1>Yahoo Baba : CSS Grid Fit-Content</h1>
+<div class="container">
+    <div class="items item1">One</div>
+    <div class="items item2">Two</div>
+    <div class="items item3">Three</div>
+    <div class="items item4">Four</div>
+    <div class="items item5">Five</div>
+    <div class="items item6">Six</div>
+</div>
+</body>
+</html>

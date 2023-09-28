@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Tags I</title>
+</head>
+<body>
+  <form action="" method="post">
+     <fieldset><legend>Personal Details</legend>
+    <lable>Name:</lable><input type="text" name="fname" value="rathod"/><br><br>
+    <lable>Password:</lable><input type="password" name="password" placeholder="enter password"/><br><br>
+    <label>Gender:</label><input type="radio" name="gender" id="male"/><label for="male">Male</label>
+                          <input type="radio" name="gender" id="female"/><label for="female">Female</label><br><br>
+    <label>Hobbies:</label><input type="checkbox" name="hobbies" id="music"/><label for="music">Music</label>
+                           <input type="checkbox" name="hobbies" id="football"/><label for="football">Football</label>
+                           <input type="checkbox" name="hobbies" id="coding"/><label for="coding">Coding</label><br><br>
+    <label>Country:</label><select name="country" size="3" multiple>
+                                <option value="id">India</option>
+                                <option value="pak">Paskistan</option>
+                                <option value="nepl">Nepal</option>
+                                <option value="cn">Chaina</option>
+                                <option selected value="bhu">Bhutan</option>
+                                <option value="ban">Bangladesh</option>
+                                <option value="sri">shrilanka</option>
+                           </select><br><br>
+    <label>Cars:</label><select>
+                           <optgroup label="Toyota">
+                               <option>Innova</option>
+                               <option>Etios</option>
+                               <option>Fortuner</option>
+                           </optgroup>
+                           <optgroup label="Renault">
+                               <option>Kwid</option>
+                               <option>duster</option>
+                               <option>Capture</option>
+                           </optgroup>
+                        </select><br><br>
+    <label>Cars:</label><input list="cars" />
+                        <datalist id="cars">
+                            <option value="Innova"></option>
+                            <option value="Kid"></option>
+                            <option value="Etios"></option>
+                            <option value="Swift"></option>
+                            <option value="Duster"></option>
+                        </datalist><br><br>
+    <label>Upload File</label><input type="file"  accept="image/jpeg" name="" /><br><br>
+    <label>Message:</label><textarea rows="10" cols="30">Yahoo Baba</textarea><br><br>
+    <input type="submit" value="Save" />
+    <input type="reset" value="Reset" />
+    <input type="button" value="Click" />
+     </fieldset>
+  </form>
+</body>
+</html>

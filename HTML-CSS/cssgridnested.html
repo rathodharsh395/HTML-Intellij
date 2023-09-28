@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid - Nested Grids</title>
+    <style>
+        body{ font-family:arial,helvetica; }
+        h1{ padding:0 0 0 40px; }
+        .container{
+            background:wheat;
+            width:650px;
+            margin:50px auto 0;
+
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            grid-template-rows:repeat(2,150px);
+            grid-gap:10px;
+        }
+        .item1{ background: orangered; }
+        .item2{ background: yellowgreen; }
+        .item3{ background: MEDIUMPURPLE;
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                grid-gap:10px;
+                }
+        .item3 > div{
+                background:#fff;
+                color:red;
+                padding:10px;
+                }
+        .item4{ background: hotpink; }
+        .items{ color:#fff;font-size:20px;font-weight:bolder;}
+    </style>
+</head>
+<body>
+    <h1>Yahoo Baba : CSS Grid - Nested Grids</h1>
+
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">
+            <div class="subitems1">A</div>
+            <div class="subitems2">B</div>
+            <div class="subitems3">C</div>
+        </div>
+        <div class="items item4">Four</div>
+    </div>
+</body>
+</html>

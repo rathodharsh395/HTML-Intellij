@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Flexbox Align-self</title>
+    <style>
+        body{ font-family:arial,helvetica; }
+        h1{ padding:0 0 0 40px; }
+        .container{
+                background:#eee;
+                margin:50px;
+                padding:10px;
+                border:3px solid #000;
+                height:400px;
+
+                display:flex;
+                align-items:center;
+             /* align-self: is used for aligning individual item */
+                }
+        .item1{ background: orangered;
+                align-self:stretch;}
+        .item2{ background: yellowgreen; }
+        .item3{ background: MEDIUMPURPLE; }
+        .item4{ background: hotpink;
+                align-self:flex-end;}
+        .items{ color:#fff;
+                font-size:20px;
+                font-weight:bold;
+                text-align:center;
+                padding:2px;
+                margin:5px;}
+    </style>
+</head>
+<body>
+        <h1>Yahoo Baba : CSS Flexbox Align-Self</h1>
+
+        <div class="container">
+            <div class="items item1">One</div>
+            <div class="items item2">Two</div>
+            <div class="items item3">Three</div>
+            <div class="items item4">Four</div>
+        </div>
+</body>
+</html>

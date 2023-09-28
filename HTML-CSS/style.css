@@ -1,0 +1,138 @@
+*{
+  box-sizing:border-box;
+  }
+body{
+  font-family:arial;
+  display:flex;
+  flex-direction:column;
+  margin:0px;
+  }
+a{
+  text-decoration:none;}
+header{
+  background:#566c2b;
+  display:flex;
+  align-items:center;
+  padding:15px 0;
+  }
+header a{
+  color:#fff;
+  }
+header ul{
+  list-style:none;
+  display:flex;
+  padding:0;
+  margin:0;
+  }
+aside{
+  flex: 0 0 20vw;
+  background:beige;
+  padding:10px;
+  }
+aside ul{
+  list-style:none;
+  padding:0px;
+  }
+aside ul a{
+  color:#566c2b;
+  display:block;
+  padding:10px;
+  border-bottom:1px solid pink;
+  }
+aside img{
+  width:100%;
+  }
+article{
+  padding:10px;
+  }
+footer{
+  background:#566c2b;
+  color:#fff;
+  text-align:center;
+  }
+#logo{
+  margin:0 auto;
+  font-size:30px;
+  }
+#menu li{
+  padding:10px;
+  }
+#social-links li{
+  padding:10px;
+  }
+#main{
+  display:flex;
+  }
+.services-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  }
+.service-box{
+  border:1px solid #eee;
+  flex-basis:33%;
+  max-width:370px;
+  padding:10px;
+  margin-bottom:15px;
+  display:flex;
+  flex-direction:column;
+  }
+.service-box h3{
+  margin:5px 0px 10px;
+  }
+.service-box p{
+  margin:0 0 10px;
+  }
+.service-box img{
+  object-fit:cover;
+  width:100%;
+  height:100%;
+  border-radius:5px;
+  }
+.call-to-action{
+  align-color:flex-start;
+  margin-top:auto;
+  }
+.call-to-action a{
+  background:grey;
+  border:2px solid transparent;
+  color:#fff;
+  padding:8px 12px;
+  display:block;
+  }
+.call-to-action a:hover{
+  background:transparent;
+  border:2px solid grey;
+  color:grey;
+  }
+
+@media screen and (max-width:850px){
+      .service-box{
+        flex-basis:48%;
+      }
+      aside{
+        flex:0 0 30vw;
+      }
+  }
+@media screen and (max-width:510px){
+     .services-container{
+       flex-direction:column;
+       align-items:center;
+     }
+     header{
+       flex-direction:column;
+     }
+     #logo{
+        order:-1;
+     }
+     #main{
+       flex-direction:column;
+     }
+     article{
+       order:-1;
+     }
+     h2,h3{
+       text-align:center;
+     }
+
+  }

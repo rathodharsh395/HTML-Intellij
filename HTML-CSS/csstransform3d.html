@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Transform-3D</title>
+    <style>
+        body{
+            font-family:arial,helvetica;
+        }
+        .base{
+            width:350px;
+            height:250px;
+            background:grey;
+            font-size:18px;
+            text-align:center;
+            margin:100px 0 0 100px;
+        }
+        #box{
+            width:350px;
+            height:250px;
+            background:tomato;
+
+            transform:perspective(800px) scale3d(1,1,2) rotateX(60deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Yahoo Baba : CSS Transform 3D</h1>
+    <div class="base">
+        <div id="box">Yahoo Baba</div>
+    </div>
+</body>
+</html>

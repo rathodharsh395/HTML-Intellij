@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>border-collapse property</title>
+    <style>
+    /* border-collapse: separate | collapse | initial | inherit; */
+        table{
+            width:80%;
+            height:50%;
+            border:2px solid blue;
+            text-align:center;
+            font-size:20px;
+            border-collapse:collapse;
+        }
+        th{
+            border:5px solid red;
+            background-color:yellow;
+        }
+        td{
+            border:5px solid purple;
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>The border-collapse Property</h1>
+    <h2> border-collapse:separate;</h2>
+    <table id="t1">
+        <tr>
+            <th>First_name</th>
+            <th>Last_name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>Gosling</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>Alan</td>
+            <td>Rickman</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Mendes</td>
+            <td>82</td>
+        </tr>
+    </table>
+</body>
+</html>

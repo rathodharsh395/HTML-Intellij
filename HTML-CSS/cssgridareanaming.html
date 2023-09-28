@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Lines Naming Tutorial</title>
+    <style>
+        body{ font-family:arial,helvetica; }
+        h1{ padding:0 0 0 40px; }
+
+        .container{
+            background:#eee;
+            width:720px;
+            margin:45px auto 0;
+
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows:120px 60px 100px 400px 50px;
+            grid-gap:15px;
+
+            grid-template-areas:"header header header"
+                                "menu menu menu"
+                                "box1 box2 sidebar"
+                                "content content sidebar"
+                                "footer footer footer"
+            }
+        .header{
+            background:orangered;
+            grid-area:header;
+            }
+        .menu{
+            background:yellowgreen;
+            grid-area:menu;
+            }
+        .box1{
+            background:MEDIUMPURPLE;
+            grid-area:box1;
+            }
+        .box2{
+            background:hotpink;
+            grid-area:box2;
+            }
+        .sidebar{
+            background:royalblue;
+            grid-area:sidebar:
+            }
+        .content{
+            background: #7DCEA0;
+            grid-area:content;
+            }
+        .footer{
+            background:goldenrod;
+            grid-area:footer;
+            }
+        .items{ color:#fff;font-size:20px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="items header">Header</div>
+    <div class="items menu">Menu</div>
+    <div class="items box1">Box 1</div>
+    <div class="items box2">Box 2</div>
+    <div class="items sidebar">Sidebar</div>
+    <div class="items content">Content</div>
+    <div class="items footer">Footer</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5  div Tag</title>
+    <style>
+     .loginform{
+        margin:10px 38%;
+        width:40%;
+        padding:10px;
+        border:1px solid pink;
+        border-radius:10px;
+        float:left;
+        }
+     .formheading{
+        background-color:red;
+        color:white;
+        padding:4px;
+        text-align:center;
+        }
+     .sub{
+        background-color:blue;
+        padding: 7px 40px 7px 40px;
+        color:white;
+        font-weight:bold;
+        margin-left:70px;
+        border-radius:5px;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="loginform">
+            <h3 class="formheading">Login First</h3>
+            <form action="LoginServlet" method="post">
+                <table>
+                    <tr><td>Email:</td>
+                        <td><input type="email" name="email"/></td></tr>
+                    <tr><td>Password:</td>
+                        <td><input type="password" name="password"/></td></tr>
+                    <tr><td colspan="2" style="text-align:center">
+                        <input class="sub" type="submit" value="login"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+</body>
+</html>

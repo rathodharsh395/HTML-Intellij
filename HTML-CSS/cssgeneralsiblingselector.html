@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS General Sibling Selector</title>
+    <style>
+        body{
+            font-family:arial;
+        }
+        #box{
+            border:2px solid #000;
+            padding:10px;
+            margin-top:10px;
+        }
+        ul~p{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yahoo Baba : CSS General Sibling Selector</h1>
+    <ul id="list">
+        <li>css advanced selectors such as simple selectors</li>
+        <li>css advanced selectors such as simple selectors</li>
+        <li>css advanced selectors such as simple selectors</li>
+        <li>css advanced selectors such as simple selectors</li>
+    </ul>
+    <p>css advanced selectors such as simple selectors</p>
+    <p>css advanced selectors such as simple selectors</p>
+    <p>css advanced selectors such as simple selectors</p>
+
+    <h2>Sub Heading</h2>
+    <p>css advanced selectors such as simple selectors</p>
+
+    <div id="box">
+        <p>css advanced selectors such as simple selectors</p>
+    </div>
+    <p>css advanced selectors such as simple selectors</p>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positioning of Grid Items</title>
+    <style>
+        body{ font-family:arial;}
+        h1{
+            padding:0 0 0 40px;
+        }
+        .container{
+            background:#eee;
+            width:700px;
+            margin:50px 0 0 50px;
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows:repeat(4,120px);
+            grid-gap:20px 25px;
+        }
+        .items1{
+            background:orangered;
+            /*grid-row-start:2;
+            grid-row-end:3;*/
+            grid-row:2/3;
+            /*grid-column-start:3;
+            grid-column-end:4;*/
+            grid-column:3/4;
+            z-index:1;
+        }
+        .items2{
+            background:yellowgreen;
+            grid-row:2/ span 3;
+        }
+        .items3{
+            background:slateblue;
+            grid-column:2/-1;
+        }
+        .items4{
+            background:hotpink;
+            grid-column:2/4;
+            grid-row:2/3;
+        }
+        .items5{
+            background:royalblue;
+        }
+        .items6{
+            background:gold;
+            grid-row:1/2;
+            grid-column:1 / -1;
+        }
+        .items{ color:#fff;font-size:20px;font-weight:
+    </style>
+</head>
+<body>
+    <h1>Yahoo Baba : CSS Positioning of Grid Items</h1>
+
+    <div class="container">
+        <div class="items items1">First</div>
+        <div class="items items2">Second</div>
+        <div class="items items3">Third</div>
+        <div class="items items4">Fourth</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Sixth</div>
+    </div>
+</body>
+</html>

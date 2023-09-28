@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Counter-Increment</title>
+    <style>
+        body{ font:19px/25px arial;padding:10px 0 0 20px;
+               counter-reset:section ;}
+        h1{ font-size: 32px; margin-bottom:35px;color:green;
+               counter-reset:subsection;}
+        h1::before{
+            content:"Section " counter(section)" : ";
+            counter-increment:section ;
+        }
+        h2::before{
+            content:counter(section)"."counter(subsection)" : ";
+            counter-increment;subsection;
+    </style>
+</head>
+<body>
+    <h1>HTML and CSS</h1>
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>Bootstrap Tutorial</h2>
+    <hr>
+
+    <h1>JavaScript</h1>
+    <h2>JavaScript Tutorial</h2>
+    <h2>jQuery Tutorial</h2>
+    <h2>JSON Tutorial</h2>
+    <hr>
+
+    <h1>Server Side</h1>
+    <h2>SQL Tutorial</h2>
+    <h2>PHP Tutorial</h2>
+</body>
+</html>
