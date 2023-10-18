@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS CurrentColor</title>
+    <style>
+        body{
+            font-family:arial;
+        }
+        h1{
+            text-align:center;
+        }
+        #test{
+            width:500px;
+            color:blue;
+            padding:10px;
+            margin:0 auto;
+            border:2px solid currentcolor;
+        }
+        #test h2{
+            border-bottom:2px solid CurrentColor;
+        }
+        .readmore{
+<!--            background:currentcolor;-->
+<!--            color:red;-->
+                color:CurrentColor;
+                background:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS CurrentColor Mode</h1>
+    <div id="test">
+        <h2>Yahoo Baba</h2>
+        <p>A self-driven and meticulous B.Sc graduate skilled at Java technology, identifying and solving problems in optimized
+            way. Seeking opportunities in the field of java back-end development.</p>
+        <a class="readmore" href="">Readmore</a>
+    </div>
+</body>
+</html>
