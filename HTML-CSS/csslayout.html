@@ -21,21 +21,24 @@
             background:white;
         }
         #header{
-            background:var(--main-color);
-            height:100px;
-            color:white;
-            font-family:var(--head-font);
 
+            color:#fff;
+        }
+        .abc{
+            background:crimson;
+        }
+        .xyz{
+            background:green;
         }
         #header h1{
             padding:30px 0 0 20px;
         }
         #menu{
-            background:lightsalmon;
+            background:MEDIUMPURPLE;
         }
         #menu ul{
-            margin:0 ;
-            padding:0;
+            margin: 0;
+            padding: 0;
         }
         #menu li{
             display:inline-block;
@@ -69,6 +72,7 @@
         #sidebar{
             background:lightblue;
             width:200px;
+            height:100vh;
             min-height:500px;
             float:right;
             color:var(--m-color);
@@ -125,8 +129,8 @@
     </style>
 </head>
 <body>
-<div id="wrapper">
-        <div id="header">
+    <div id="wrapper">
+        <div id="header" class="abc xyz efg" style="border:10px solid green;">
             <h1>Yahoo Baba</h1>
         </div>
         <div id="menu">
@@ -138,10 +142,17 @@
             </ul>
         </div>
         <div id="content">
-            <h2>Design Basic Layout</h2>
-            <a href="">Hello Wordl</a>
+            <h2>Sub Heading</h2>
+            <img src="brennan-unsplash.jpg" width="200px" class="content">
             <p>I believe I am the ideal candidate for this role for several compelling reasons. My education and professional background have equipped me with the necessary skills and knowledge to excel in this role. I am a quick learner and a good communicator.</p>
-            <p>I believe I am the ideal candidate for this role for several compelling reasons. My education and professional background have equipped me with the necessary skills and knowledge to excel in this role. I am a quick learner and a good communicator.</p>
+
+            <ul class="list">
+                <li>In this tutorial you will learn how </li>
+                <li>get and set value in html object  with javascript dom methods in Hindi, </li>
+                <li>how to set innerText , innerHTML , getAttribute and setAttribute method in javascript</li>
+                <li>You can also learn how to remove attribute of any html tag </li>
+                <li> with javascript removeAttribute method</li>
+            </ul>
         </div>
         <div id="sidebar">
             <ul>
@@ -155,6 +166,7 @@
             rathodharsh@copyrigth 2001
         </div>
     </div>
+    <script src="dom-main.js"></script>
 </body>
 </html>
 
